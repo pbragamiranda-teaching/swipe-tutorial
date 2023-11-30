@@ -1,0 +1,50 @@
+.matches {
+  height: 75vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.matches-cards {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.matches-card {
+  display: inline-block;
+  width: 90vw;
+  max-width: 400px;
+  height: 71vh;
+  background: #FFFFFF;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  will-change: transform;
+  transition: all 0.3s ease-in-out;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.bg-gradient-image {
+  height: 70%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.moving.matches-card {
+  transition: none;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}

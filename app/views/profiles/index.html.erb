@@ -1,0 +1,15 @@
+<h1>Profiles#index</h1>
+<p>Find me in app/views/profiles/index.html.erb</p>
+
+<div class="matches">
+  <div class="matches-cards" data-controller="swipe">
+    <% @profiles.each do |profile| %>
+      <div class="matches-card" data-swipe-target="swipeCard">
+        <div class="bg-gradient-image" style="background-image: url(<%= profile.image_url %>);">
+          <h1><%= profile.name %></h1>
+          <p><%= profile.age %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
